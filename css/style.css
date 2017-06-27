@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+}
+
+.nav a {
+    text-decoration: none;
+    text-align: justify;
+    padding: 10px 30px;
+    float: right;
+    color: white;
+    margin-top: 20px;
+}
+
+.nav a:hover {
+    color: white;
+    background-color: chocolate;
+    display: block;
+}
+
+.home {
+    margin: 0;
+    max-width: 100%;
+    background: url(/img/bg2.png) center center fixed;
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto;
+}
+
+.home .cen {
+    display: block;
+    flex: auto;
+    text-align: center;
+    padding: 100px;
+}
+
+.cen h1 {
+    color: red;
+    font-family: 'Bree Serif', serif;
+}
+
+.cen h4 {
+    margin-top: -40px;
+    color: white;
+}
+
+.cen h2 {
+    color: blue;
+}
+
+.home .title {
+    text-align: center center;
+    font-weight: 500;
+    font-size: 50;
+}
+
+@media (max-width:970px) {
+    .nav-content {
+        display: none;
+    }
+}
+
+.social {
+    margin-top: -80px;
+}
+
+.social ul {
+    list-style-type: none;
+}
+
+.social i {
+    font-size: 30px;
+    padding: 5px 10px;
+    color: black;
+}
+
+.social i:hover {
+    color: blue;
+}
+
+hr {
+    margin: 0px 300px;
+}
+
+.aboutus h1 {
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+    font-size: 90;
+    letter-spacing: 10px;
+}
+
+.aboutus-para {
+    padding: 10px;
+    margin: 0px 100px;
+    word-spacing: 5;
+}
+
+.vision {
+    margin: 0;
+    max-width: 100%;
+    background: url(/img/vision-mission-banner.jpg) center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto;
+}
+
+.vision-head {
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+    font-size: 50;
+    letter-spacing: 10px;
+}
+
+.mission-head {
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+    font-size: 50;
+    letter-spacing: 10px;
+}
+
+.missionh1-ul {}
+
+h1.courses {
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+    font-size: 35;
+    letter-spacing: 4px;
+}
+
+h4.courses {
+    padding: 10px;
+    margin: 0px 200px;
+}
+
+.cards-view {
+    margin: 50px 250px;
+}
+
+.card,
+.hover-shadow:hover {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    max-height: 350px;
+    max-width: 325.22px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.card-img-1 {
+    max-height: 200px;
+}
+
+.card-h2 {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.card-ul {
+    list-style-type: none;
+    list-style: none;
+    display: inline;
+}
+
+.card-li {
+    display: inline;
+    list-style-type: none;
+    list-style: none;
+}
+
+.card p {
+    margin-top: -1px;
+}
