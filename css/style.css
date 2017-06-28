@@ -26,7 +26,17 @@ body {
         max-height: 20%;
     }
     .cen {
-        margin-top: -50px;
+        padding: 0px;
+    }
+    .aboutus-h1 {
+        font-size: 5;
+    }
+    .vision {
+        background-color: gray;
+    }
+    h4.courses {
+        padding: 1px;
+        margin: 2px 2px;
     }
 }
 
@@ -40,16 +50,20 @@ body {
     background-size: auto;
 }
 
-.home .cen {
+.cen {
     display: block;
     flex: auto;
     text-align: center;
     padding: 100px;
 }
 
-.cen h1 {
+.cen-h1 {
+    margin-top: -30px;
     color: red;
     font-family: 'Bree Serif', serif;
+    text-align: center justify;
+    font-weight: 500;
+    font-size: 50;
 }
 
 .cen h4 {
@@ -58,17 +72,18 @@ body {
 }
 
 .cen h2 {
-    color: blue;
+    color: black;
 }
 
-.home .title {
-    text-align: center center;
-    font-weight: 500;
-    font-size: 50;
+@media (max-width:970px) {
+    .cen-h1 {
+        font-size: 40;
+        text-align: center justify;
+    }
 }
 
 .social {
-    margin-top: -80px;
+    margin-top: 23px;
 }
 
 .social ul {
@@ -89,16 +104,16 @@ hr {
     margin: 0px 300px;
 }
 
-.aboutus h1 {
+.aboutus-h1 {
     font-family: 'Bree Serif', serif;
     text-align: center;
-    font-size: 90;
+    font-size: 50;
     letter-spacing: 10px;
 }
 
-.aboutus-para {
+.aboutus-p {
     padding: 10px;
-    margin: 0px 100px;
+    margin: 5px 10px;
     word-spacing: 5;
 }
 
@@ -113,11 +128,21 @@ hr {
     background-size: auto;
 }
 
+@media (max-width:970px) {
+    .vision {
+        background: linear-gradient( red, #f06d06);
+    }
+}
+
 .vision-head {
     font-family: 'Bree Serif', serif;
     text-align: center;
     font-size: 50;
     letter-spacing: 10px;
+}
+
+.vision-ul {
+    color: aliceblue;
 }
 
 .mission-head {
@@ -132,7 +157,6 @@ hr {
 .mission {
     margin: 0;
     max-width: 100%;
-    background-color: /*    background: url(https://smazee-development-labs.github.io/srimuthaiah/img/vision-mission-banner.jpg) center center;*/
     background-repeat: no-repeat;
     -webkit-background-size: auto;
     -moz-background-size: auto;
@@ -152,8 +176,22 @@ h4.courses {
     margin: 0px 200px;
 }
 
+@media (max-width:970px) {
+    h4.courses {
+        padding: 1px;
+        margin: 2px 4px;
+    }
+}
+
 .cards-view {
     margin: 50px 250px;
+}
+
+@media (max-width:970px) {
+    .cards-view {
+        margin: 20px 20px;
+        align-content: center center;
+    }
 }
 
 .card,
