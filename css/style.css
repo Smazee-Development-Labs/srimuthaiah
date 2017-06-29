@@ -11,13 +11,28 @@ body {
     margin-top: 20px;
 }
 
+.menu {
+    display: none;
+}
+
 .nav a:hover {
     color: white;
     background-color: chocolate;
     display: block;
 }
 
+.aboutus-h1 {
+    color: white;
+}
+
+.aboutus-p {
+    color: white;
+}
+
 @media (max-width:970px) {
+    .menu {
+        display: block;
+    }
     .nav-content {
         display: none;
     }
@@ -37,6 +52,25 @@ body {
     h4.courses {
         padding: 1px;
         margin: 2px 2px;
+    }
+}
+
+#particles-js {
+    position: absolute;
+    min-width: 100%;
+    margin-top: -40px;
+    height: 100%;
+    background-color: #16a085;
+    background-attachment: fixed;
+    background-repeat: round;
+    background-size: auto;
+    /*    background-position: 50% 50%;*/
+    z-index: -1;
+}
+
+@media (max-width:970px) {
+    #particles-js {
+        min-height: 250%;
     }
 }
 
@@ -184,14 +218,7 @@ h4.courses {
 }
 
 .cards-view {
-    margin: 50px 250px;
-}
-
-@media (max-width:970px) {
-    .cards-view {
-        margin: 20px 20px;
-        align-content: center center;
-    }
+    margin: 50px 50px;
 }
 
 .card,
@@ -207,6 +234,12 @@ h4.courses {
     max-height: 200px;
 }
 
+@media (max-width:970px) {
+    .cards-view {
+        align-content: center center;
+    }
+}
+
 .card-h2 {
     text-align: center;
     margin-bottom: 0px;
@@ -214,16 +247,37 @@ h4.courses {
     text-decoration: none;
 }
 
-.card-ul {
-    list-style-type: none;
-    list-style: none;
-    display: inline;
+.g-1 {
+    display: table-cell;
+    padding: 0px 30px;
 }
 
-.card-li {
-    display: inline;
-    list-style-type: none;
-    list-style: none;
+.g-2 {
+    display: table-cell;
+    padding: 30px 30px;
+}
+
+.g-3 {
+    display: table-cell;
+    padding: 0px 30px;
+}
+
+.g-4 {
+    display: table-cell;
+    padding: 30px 120px;
+}
+
+@media (max-width:970px) {
+    .card-li {
+        padding: 5px;
+    }
+    .g-1,
+    .g-2,
+    .g-3,
+    .g-4 {
+        padding: 5px;
+        display: table-row;
+    }
 }
 
 .card p {
@@ -233,4 +287,16 @@ h4.courses {
 .card-a {
     text-decoration: none;
     color: black;
+}
+
+.len-card {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    min-height: 480px;
+    max-width: 325.22px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.aff-li {
+    display: table-cell;
 }
