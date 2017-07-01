@@ -70,7 +70,7 @@ body {
 
 @media (max-width:970px) {
     #particles-js {
-        min-height: 250%;
+        min-height: 500%;
         position: absolute;
         min-width: 100%;
         margin-top: -40px;
@@ -207,6 +207,47 @@ hr {
     background-size: auto;
 }
 
+
+/*PAST*/
+
+.past h1 {
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+    font-size: 35;
+    letter-spacing: 4px;
+}
+
+.past h4 {
+    padding: 2px 100px;
+}
+
+.past ol {
+    padding: 2px 150px;
+}
+
+
+/*AWARDS*/
+
+.award {
+    background-color: lightcyan;
+}
+
+.award h1 {
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+    font-size: 35;
+    letter-spacing: 4px;
+}
+
+.award h3 {
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+}
+
+.award h4 {
+    text-align: center;
+}
+
 h1.courses {
     font-family: 'Bree Serif', serif;
     text-align: center;
@@ -301,11 +342,53 @@ h4.courses {
 .len-card {
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
     min-height: 480px;
-    max-width: 325.22px;
-    overflow: hidden;
+    max-width: 315px;
     border-radius: 5px;
 }
 
 .aff-li {
     display: table-cell;
+}
+
+@media (max-width:970px) {
+    .aff-li {
+        display: table-row;
+    }
+}
+
+
+/*GALLERY*/
+
+.gal {
+    position: relative;
+    max-height: 500px;
+    max-width: 600px;
+}
+
+.gall h1 {
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+    font-size: 35;
+    letter-spacing: 4px;
+    color: darkgreen;
+}
+
+.gal ul {
+    list-style: none outside none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.gal li {
+    display: block;
+    float: left;
+    margin-right: 6px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.gal img {
+    display: absolute;
+    height: auto;
+    max-width: 100%;
 }

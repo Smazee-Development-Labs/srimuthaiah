@@ -23,6 +23,44 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <!--ICONS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--        LIGHT_SLIDER-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/lightslider.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
+    <script>
+        $(document).ready(function() {
+            $("#content-slider").lightSlider({
+                loop: true,
+                keyPress: true
+            });
+            $('#lightSlider').lightSlider({
+                gallery: true,
+                item: 1,
+                thumbItem: 10,
+                pager: true,
+                slideMargin: 0,
+                speed: 500,
+                auto: true,
+                loop: true,
+                controls: true,
+                onSliderLoad: function() {
+                    $('#lightSlider').removeClass('cS-hidden');
+                }
+            });
+            $('#two').lightSlider({
+                gallery: false,
+                item: 1,
+                pager: true,
+                slideMargin: 0,
+                speed: 300,
+                delay: 5000,
+                auto: true,
+                loop: true,
+                controls: true
+            });
+        });
+
+    </script>
 </head>
 
 <body>
@@ -113,6 +151,36 @@
         </ul>
     </section>
     <hr>
+    <section class="past">
+        <div>
+            <h1>PAST EXPERIENCES</h1>
+            <h4>We are running the Institution for the past 10 years with good academic records and produced rank holders. We have also given job oriented training for Government aided students which is as follows:</h4>
+            <ol>
+                <li>Tamil Nadu Adi Dravida Housing Development corporation</li>
+                <li> Department of Backward and Most Backward Classes Welfare</li>
+                <li>Nehru Yuva Kendra</li>
+                <li>Tamil Nadu Corporation for Development of Women</li>
+                <li>Tamil Nadu Open University Vocational Programmes</li>
+                <li>SJSRY and NULM Training through Commissionerate of Municipal Administration, Tamilnadu In this, we trained around 10,000 candidates and placed successfully. We are very keen to join hands with your esteemed organization in this noble cause by offering the services of the institute to provided job-oriented education to aspiring students.</li>
+            </ol>
+        </div>
+    </section><br>
+    <hr>
+    <section class="award">
+        <div>
+            <h1>AWARDS AND ACHIEVEMENTS:</h1>
+            <h3>Our Managing Director received</h3>
+            <ul id="two">
+                <li>
+                    <h4>Best Educational Service Award by Tamilnadu Governor in 2014 <br><br>
+                        <img src="img/award-1.png" alt="award-1"></h4>
+                </li>
+                <li>
+                    <h4>Seva Rathna Award for Educational Service - 2013 by South India Social & Cultural Academy, Chennai<br><br><img src="img/award-2.png" alt="award-2"></h4>
+                </li>
+            </ul>
+        </div>
+    </section>
     <section class="courses">
         <div class="courses">
             <h1 class="courses">OUR SKILL TRAINING DIVISION</h1><br>
@@ -239,7 +307,7 @@
             </ul>
 
         </div>
-    </section>
+    </section><br>
     <section class="aff">
         <div class="len">
             <ul class="aff-ul">
@@ -271,11 +339,167 @@
                 </li>
             </ul>
         </div>
+        <div>
+            <h1>WE HAVE ALSO GIVEN TRAINING FOR GOVERNMENT AIDED STUDENTS WHICH IS AS FOLLOWS:</h1>
+            <ol>
+                <li>TamilNadu Adi Dravida Housing Development corporation</li>
+                <li>Department of backward and Mostbackward Classes Welfare & Minorities Welfare</li>
+                <li> Nehru Yuva Kendra-TamilNadu</li>
+                <li>TamilNadu Corporation for Development of Women</li>
+                <li>TamilNadu OpenUniversity Vocational Programmes</li>
+                <li> C.M.A, SJSRY Training in all Districts in TamilNadu</li>
+                <li> National Digital Literacy Mission–Govt.of India.</li>
+            </ol><br>
+            <h1>SRI MUTHAIH MEMORIAL TRUST HAS BEEN APPROVED THE FOLLOWING GOVERNMENT BODIES:</h1>
+            <ul>
+                <li>The Directorate of Employment and Training Govt. of Tamilnadu(Approval Order No: 23593/IS-5/08)</li>
+                <li>Bharathiar University – Coimbatore , Study Centre (Approval Order No:1601/2007) University of Madras – Chennai, Study Centre (Approval Order No: 613/2010) Tamil Nadu Open University – Chennai, Study Centre</li>
+                <li> LEARNING RESOURCE CENTRE (LRC No.210503)</li>
+                <li> COMPUTER PROGRAM CENTRE (CPC No.210303)</li>
+                <li>COMMUNITY COLLEGE (CC No.210110)</li>
+                <li> For School of Distance Education all UG, PG, Diploma, Certificate Courses along with regular computer courses and these courses are being conducted by us.</li>
+                <li>There is a need for providing training in Job Oriented Course for creating self employment and entrepreneurial opportunities in the backward areas. We are confident that we can provide training to the backward classes and thereby improve the standard of living of people below the poverty line with the kind assistance of the Government.</li>
+            </ul>
+        </div>
+    </section>
+    <section class="gall">
+        <h1>GALLERY</h1>
+        <div class="gal">
+
+            <h3>
+                <ul id="lightSlider" class="gallery list-unstyled cS-hidden lightSlider lsGrab lSSlide">lightSlider lsGrab lSSlide
+                    <li class="gal" data-thumb="img/gallery/thumb/DSC_1236_tn.jpg">
+                        <img src="img/gallery/DSC_1236.JPG" />
+                    </li>
+                    <li data-thumb="img/gallery/thumb/DSC_1429_tn.jpg">
+                        <img src="img/gallery/DSC_1429.JPG" />
+                    </li>
+                    <li data-thumb="img/gallery/thumb/DSC_1244_tn.jpg">
+                        <img src="img/gallery/DSC_1244.JPG" />
+                    </li>
+                    <li data-thumb="img/gallery/thumb/DSC_1458_tn.jpg">
+                        <img src="img/gallery/DSC_1458.JPG" />
+                    </li>
+                    <li data-thumb="img/gallery/thumb/DSC_1465_tn.jpg">
+                        <img src="img/gallery/DSC_1465.JPG" />
+                    </li>
+                    <li data-thumb="img/gallery/thumb/DSC_1484_tn.jpg">
+                        <img src="img/gallery/DSC_1484.JPG" />
+                    </li>
+                    <li data-thumb="img/gallery/thumb/DSC_1485_tn.jpg">
+                        <img src="img/gallery/DSC_1485.JPG" />
+                    </li>
+                    <li data-thumb="img/gallery/thumb/DSC_1499_tn.jpg">
+                        <img src="img/gallery/DSC_1499.JPG" />
+                    </li>
+                    <li data-thumb="img/gallery/thumb/DSC_1511_tn.jpg">
+                        <img src="img/gallery/DSC_1511.JPG" />
+                    </li>
+                    <li data-thumb="img/gallery/thumb/DSC_1513_tn.jpg">
+                        <img src="img/gallery/DSC_1513.JPG" />
+                    </li>
+                    <li data-thumb="img/gallery/thumb/DSC_1515_tn.jpg">
+                        <img src="img/gallery/DSC_1515.JPG" />
+                    </li>
+                    <li data-thumb="img/gallery/thumb/DSC_1516_tn.jpg">
+                        <img src="img/gallery/DSC_1516.JPG" />
+                    </li>
+                    <li data-thumb="img/gallery/thumb/DSC_1525_tn.jpg">
+                        <img src="img/gallery/DSC_1525.JPG" />
+                    </li>
+                    <li data-thumb="img/gallery/thumb/DSC_1542_tn.jpg">
+                        <img src="img/gallery/DSC_1542.JPG" />
+                    </li>
+                    <li data-thumb="img/gallery/thumb/DSC_1546_tn.jpg">
+                        <img src="img/gallery/DSC_1546.JPG" />
+                    </li>
+                    <li data-thumb="img/gallery/thumb/DSC_1547_tn.jpg">
+                        <img src="img/gallery/DSC_1547.JPG" />
+                    </li>
+                    <li data-thumb="img/gallery/thumb/DSC_1550_tn.jpg">
+                        <img src="img/gallery/DSC_1550.JPG" />
+                    </li>
+                    <li data-thumb="img/gallery/thumb/DSC_1555_tn.jpg">
+                        <img src="img/gallery/DSC_1555.JPG" />
+                    </li>
+                    <li data-thumb="img/gallery/thumb/DSC_1590_tn.jpg">
+                        <img src="img/gallery/DSC_1590.JPG" />
+                    </li>
+                    <li data-thumb="img/gallery/thumb/DSC_1602_tn.jpg">
+                        <img src="img/gallery/DSC_1602.JPG" />
+                    </li>
+                    <li data-thumb="img/gallery/thumb/DSC_1610_tn.jpg">
+                        <img src="img/gallery/DSC_1610.JPG" />
+                    </li>
+                    <li data-thumb="img/gallery/thumb/DSC_1614_tn.jpg">
+                        <img src="img/gallery/DSC_1614.JPG" />
+                    </li>
+                    <li data-thumb="img/gallery/thumb/DSC_1621_tn.jpg">
+                        <img src="img/gallery/DSC_1621.JPG" />
+                    </li>
+                    <li data-thumb="img/gallery/thumb/DSC_1625_tn.jpg">
+                        <img src="img/gallery/DSC_1625.JPG" />
+                    </li>
+                    <li data-thumb="img/gallery/thumb/DSC_1652_tn.jpg">
+                        <img src="img/gallery/DSC_1652.JPG" />
+                    </li>
+                    <li data-thumb="img/gallery/thumb/DSC_1668_tn.jpg">
+                        <img src="img/gallery/DSC_1668.JPG" />
+                    </li>
+                    <li data-thumb="img/gallery/thumb/trust1_tn.jpg">
+                        <img src="img/gallery/trust1.JPG" />
+                    </li>
+                    <li data-thumb="img/gallery/thumb/trust2_tn.jpg">
+                        <img src="img/gallery/trust2.JPG" />
+                    </li>
+                    <li data-thumb="img/gallery/thumb/trust3_tn.jpg">
+                        <img src="img/gallery/trust3.JPG" />
+                    </li>
+                    <li data-thumb="img/gallery/thumb/trust4_tn.jpg">
+                        <img src="img/gallery/trust4.JPG" />
+                    </li>
+                    <li data-thumb="img/gallery/thumb/trust5_tn.jpg">
+                        <img src="img/gallery/trust5.JPG" />
+                    </li>
+                    <li data-thumb="img/gallery/thumb/trust6_tn.jpg">
+                        <img src="img/gallery/trust6.JPG" />
+                    </li>
+                    <li data-thumb="img/gallery/thumb/trust7_tn.jpg">
+                        <img src="img/gallery/trust7.JPG" />
+                    </li>
+                    <li data-thumb="img/gallery/thumb/trust8_tn.jpg">
+                        <img src="img/gallery/trust8.JPG" />
+                    </li>
+                    <li data-thumb="img/gallery/thumb/trust9_tn.jpg">
+                        <img src="img/gallery/trust9.JPG" />
+                    </li>
+                    <li data-thumb="img/gallery/thumb/trust11_tn.jpg">
+                        <img src="img/gallery/trust11.JPG" />
+                    </li>
+                    <li data-thumb="img/gallery/thumb/trust12_tn.jpg">
+                        <img src="img/gallery/trust12.JPG" />
+                    </li>
+                    <li data-thumb="img/gallery/thumb/trust13_tn.jpg">
+                        <img src="img/gallery/trust13.JPG" />
+                    </li>
+                    <li data-thumb="img/gallery/thumb/trust14_tn.jpg">
+                        <img src="img/gallery/trust14.JPG" />
+                    </li>
+                </ul>
+            </h3>
+        </div>
+    </section>
+    <section class="contactus">
+        <div>
+            <h1>CONTACT US</h1>
+        </div>
     </section>
     <script scr="js/main.js" type="text/javascript"></script>
     <script type="text/javascript" src="js/animate.js"></script>
     <script src="js/particles.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/lightslider.js"></script>
+
 </body>
 
 </html>
