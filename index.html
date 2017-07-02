@@ -1,4 +1,4 @@
-<html lang="en">
+<html>
 
 <head>
 
@@ -15,19 +15,19 @@
     <!--CSS-->
     <link rel="stylesheet" href="css/style.css">
     <!--ANIMATION-->
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <script type="text/javascript" src="js/animate.js"></script>
     <!--FONTS-->
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <!--ICONS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--        LIGHT_SLIDER-->
+    <!--LIGHT_SLIDER-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="js/lightslider.js"></script>
     <link type="text/css" rel="stylesheet" href="css/lightslider.css">
-
+    <!--CARD EXPAND-->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/animatedModal.min.js"></script>
 </head>
 
 <body>
@@ -156,21 +156,17 @@
         <div class="cards-view">
             <ul class="card-ul">
                 <li class="card-li li-1 g-1">
-                    <a href="#" class="card-a">
+                    <a id="demo01" href="#card-01" class="card-a">
                         <div class="card">
                             <img src="img/card/1.jpg" alt="card-img-1" class="card-img-1">
                             <h2 class="card-h2">
                                 BANKING & ACCOUNT SECTOR
                             </h2>
-                            <!--
-                        <p>Business Correspondence & Business Facilitator</p>
-                        <p>Accounts Executives (Accounts Payable & Receivables)</p>
-                        <p>Banking Associate & Accounting</p>-->
                         </div>
                     </a>
                 </li>
                 <li class="card-li li-2 g-1">
-                    <a href="#" class="card-a">
+                    <a id="demo02" href="#card-02" class="card-a">
                         <div class="card">
                             <img src="img/card/2.jpg" alt="card-img-1" class="card-img-1">
                             <h2 class="card-h2">
@@ -180,7 +176,7 @@
                     </a>
                 </li>
                 <li class="card-li li-3 g-1">
-                    <a href="#" class="card-a">
+                    <a id="demo03" href="#card-03" class="card-a">
                         <div class="card">
                             <img src="img/card/3.jpg" alt="card-img-1" class="card-img-1">
                             <h2 class="card-h2">
@@ -190,7 +186,7 @@
                     </a>
                 </li><br>
                 <li class="card-li li-4 g-2">
-                    <a href="#" class="card-a">
+                    <a id="demo04" href="#card-04" class="card-a">
                         <div class="card">
                             <img src="img/card/4.jpg" alt="card-img-1" class="card-img-1">
                             <h2 class="card-h2">
@@ -200,7 +196,7 @@
                     </a>
                 </li>
                 <li class="card-li li-5 g-2">
-                    <a href="#" class="card-a">
+                    <a id="demo05" href="#card-05" class="card-a">
                         <div class="card">
                             <img src="img/card/5.jpg" alt="card-img-1" class="card-img-1">
                             <h2 class="card-h2">
@@ -210,7 +206,7 @@
                     </a>
                 </li>
                 <li class="card-li li-6 g-2">
-                    <a href="#" class="card-a">
+                    <a id="demo06" href="#card-06" class="card-a">
                         <div class="card">
                             <img src="img/card/6.jpg" alt="card-img-1" class="card-img-1">
                             <h2 class="card-h2">
@@ -220,7 +216,7 @@
                     </a>
                 </li><br>
                 <li class="card-li li-7 g-3">
-                    <a href="#" class="card-a">
+                    <a id="demo07" href="#card-07" class="card-a">
                         <div class="card">
                             <img src="img/card/7.jpg" alt="card-img-1" class="<card-></card->img-1">
                             <h2 class="card-h2">
@@ -230,7 +226,7 @@
                     </a>
                 </li>
                 <li class="card-li li-8 g-3">
-                    <a href="#" class="card-a">
+                    <a id="demo08" href="#card-08" class="card-a">
                         <div class="card">
                             <img src="img/card/81.jpg" alt="card-img-1" class="card-img-1">
                             <h2 class="card-h2">
@@ -240,7 +236,7 @@
                     </a>
                 </li>
                 <li class="card-li li-9 g-3">
-                    <a href="#" class="card-a">
+                    <a id="demo09" href="#card-09" class="card-a">
                         <div class="card">
                             <img src="img/card/91.jpg" alt="card-img-1" class="card-img-1">
                             <h2 class="card-h2">
@@ -250,7 +246,7 @@
                     </a>
                 </li><br>
                 <li class="card-li li-10 g-4">
-                    <a href="#" class="card-a">
+                    <a id="demo10" href="#card-10" class="card-a">
                         <a href="#" class="card-a">
                             <div class="card">
                                 <img src="img/card/101.jpg" alt="card-img-1" class="card-img-1">
@@ -262,7 +258,7 @@
                     </a>
                 </li>
                 <li class="card-li li-11 g-4">
-                    <a href="#" class="card-a">
+                    <a id="demo11" href="#card-11" class="card-a">
                         <div class="card">
                             <img src="img/card/111.jpg" alt="card-img-1" class="card-img-1">
                             <h2 class="card-h2">
@@ -272,7 +268,96 @@
                     </a>
                 </li>
             </ul>
-
+            <div id="card-01">
+                <div id="btn-close-modal" class="close-card-01">
+                    <img src="img/closebt.svg">
+                </div>
+                <div class="modal-content">
+                    <p>Business Correspondence & Business Facilitator</p>
+                    <p>Accounts Executives (Accounts Payable & Receivables)</p>
+                    <p>Banking Associate & Accounting</p>
+                </div>
+            </div>
+            <div id="card-02">
+                <div id="btn-close-modal" class="close-card-02">
+                    <img src="img/closebt.svg">
+                </div>
+                <div class="modal-content">
+                    <p>Business Correspondence & Business Facilitator</p>
+                </div>
+            </div>
+            <div id="card-03">
+                <div id="btn-close-modal" class="close-card-03">
+                    <img src="img/closebt.svg">
+                </div>
+                <div class="modal-content">
+                    <p>Business Correspondence & Business Facilitator</p>
+                </div>
+            </div>
+            <div id="card-04">
+                <div id="btn-close-modal" class="close-card-04">
+                    <img src="img/closebt.svg">
+                </div>
+                <div class="modal-content">
+                    <p>Business Correspondence & Business Facilitator</p>
+                </div>
+            </div>
+            <div id="card-05">
+                <div id="btn-close-modal" class="close-card-05">
+                    <img src="img/closebt.svg">
+                </div>
+                <div class="modal-content">
+                    <p>Business Correspondence & Business Facilitator</p>
+                </div>
+            </div>
+            <div id="card-06">
+                <div id="btn-close-modal" class="close-card-06">
+                    <img src="img/closebt.svg">
+                </div>
+                <div class="modal-content">
+                    <p>Business Correspondence & Business Facilitator</p>
+                </div>
+            </div>
+            <div id="card-07">
+                <div id="btn-close-modal" class="close-card-07">
+                    <img src="img/closebt.svg">
+                </div>
+                <div class="modal-content">
+                    <p>Business Correspondence & Business Facilitator</p>
+                </div>
+            </div>
+            <div id="card-08">
+                <div id="btn-close-modal" class="close-card-08">
+                    <img src="img/closebt.svg">
+                </div>
+                <div class="modal-content">
+                    <p>Business Correspondence & Business Facilitator</p>
+                </div>
+            </div>
+            <div id="card-09">
+                <div id="btn-close-modal" class="close-card-09">
+                    <img src="img/closebt.svg">
+                </div>
+                <div class="modal-content">
+                    <p>Business Correspondence & Business Facilitator</p>
+                </div>
+            </div>
+            <div id="card-10">
+                <div id="btn-close-modal" class="close-card-10">
+                    <img src="img/closebt.svg">
+                </div>
+                <div class="modal-content">
+                    <p>Business Correspondence & Business Facilitator</p>
+                </div>
+            </div>
+            <div id="card-11">
+                <div id="btn-close-modal" class="close-card-11">
+                    <img src="img/closebt.svg">
+                </div>
+                <div class="modal-content">
+                    <p>Business Correspondence & Business Facilitator</p>
+                </div>
+            </div>
         </div>
     </section><br>
     <section class="aff">
@@ -461,6 +546,50 @@
             <h1>CONTACT US</h1>
         </div>
     </section>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/animatedModal.min.js"></script>
+    <script>
+        $("#demo01").animatedModal({
+            modalTarget: 'card-01'
+        });
+        $("#demo02 ").animatedModal({
+            modalTarget: 'card-02'
+        });
+        $("#demo03").animatedModal({
+            modalTarget: 'card-03'
+        });
+        $("#demo04").animatedModal({
+            modalTarget: 'card-04'
+        });
+        $("#demo05").animatedModal({
+            modalTarget: 'card-05'
+        });
+        $("#demo06").animatedModal({
+            modalTarget: 'card-06'
+        });
+        $("#demo07").animatedModal({
+            modalTarget: 'card-07'
+        });
+        $("#demo08").animatedModal({
+            modalTarget: 'card-08'
+        });
+        $("#demo09").animatedModal({
+            modalTarget: 'card-09'
+        });
+        $("#demo10").animatedModal({
+            modalTarget: 'card-10'
+        });
+        $("#demo11").animatedModal({
+            modalTarget: 'card-11'
+        });
+
+    </script>
+
+    <script scr="js/main.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/animate.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/lightslider.js"></script>
     <script>
         $(document).ready(function() {
             $("#content-slider").lightSlider({
@@ -469,10 +598,10 @@
             });
             $('#lightSlider').lightSlider({
                 gallery: true,
-                item: 1,
+                item: 2,
                 thumbItem: 10,
                 pager: true,
-                slideMargin: 0,
+                slideMargin: 10,
                 speed: 500,
                 auto: true,
                 loop: true,
@@ -488,16 +617,17 @@
                 slideMargin: 0,
                 auto: true,
                 loop: true,
-                controls: true
+                slideEndAnimation: false,
+                controls: true,
+                keyPress: false,
+                controls: true,
+                prevHtml: '',
+                nextHtml: ''
             });
         });
 
     </script>
-    <script scr="js/main.js" type="text/javascript"></script>
-    <script type="text/javascript" src="js/animate.js"></script>
-    <script src="js/particles.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/lightslider.js"></script>
+
 </body>
 
 </html>

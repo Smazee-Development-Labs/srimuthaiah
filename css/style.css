@@ -70,7 +70,7 @@ body {
 
 @media (max-width:970px) {
     #particles-js {
-        min-height: 500%;
+        min-height: 400%;
         position: absolute;
         min-width: 100%;
         margin-top: -40px;
@@ -248,6 +248,12 @@ hr {
     text-align: center;
 }
 
+#btn-close-modal {
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
 h1.courses {
     font-family: 'Bree Serif', serif;
     text-align: center;
@@ -339,7 +345,14 @@ h4.courses {
     color: black;
 }
 
-.len-card {
+<style>#btn-close-modal {
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+}
+
+</style>.len-card {
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
     min-height: 480px;
     max-width: 315px;
@@ -362,7 +375,8 @@ h4.courses {
 .gal {
     position: relative;
     max-height: 500px;
-    max-width: 600px;
+    max-width: 100%;
+    margin: 5px;
 }
 
 .gall h1 {
@@ -391,4 +405,11 @@ h4.courses {
     display: absolute;
     height: auto;
     max-width: 100%;
+}
+
+
+/*CONTACT US*/
+
+.contactus h1 {
+    text-align: center;
 }
