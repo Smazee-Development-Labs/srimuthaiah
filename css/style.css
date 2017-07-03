@@ -35,7 +35,8 @@ body {
 
 .nav a:hover {
     color: white;
-    background-color: chocolate;
+    background-color: rgba(126, 126, 126, 0.4);
+    backface-visibility: hidden;
     display: block;
 }
 
@@ -72,9 +73,6 @@ body {
     .aboutus-h1 {
         font-size: 5;
     }
-    .vision {
-        background-color: gray;
-    }
     h4.courses {
         padding: 1px;
         margin: 2px 2px;
@@ -90,7 +88,9 @@ body {
 
 .cen-h1 {
     margin-top: -30px;
-    color: red;
+    background: -webkit-linear-gradient(345deg, rgba(237, 103, 0, 1) 0%, rgba(250, 10, 10, 0.9) 91.7%, rgba(250, 10, 10, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-family: 'Bree Serif', serif;
     text-align: center justify;
     font-weight: 500;
@@ -170,7 +170,7 @@ body {
 
 @media (max-width:970px) {
     .vision {
-        background: linear-gradient( red, #f06d06);
+        background: linear-gradient(rgba(201, 218, 255, 0.74) 0%, rgba(0, 0, 255, 0.78) 100%);
     }
 }
 
@@ -186,7 +186,7 @@ body {
 }
 
 .mission {
-    background-color: #199fff;
+    background-color: linear-gradient(#196ED7 0%, #12e5b6 100%);
 }
 
 .mission-head {
@@ -346,22 +346,41 @@ h4.courses {
     color: black;
 }
 
-<style>#btn-close-modal {
+#btn-close-modal {
     width: 100%;
     text-align: center;
     cursor: pointer;
     color: #fff;
 }
 
-</style>.len-card {
+
+/*AFFILATIONS*/
+
+.len-h1 {
+    text-align: center;
+    font-size: 35;
+    letter-spacing: 4px;
+}
+
+.len-card {
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
     min-height: 480px;
     max-width: 315px;
     border-radius: 5px;
+    margin: 5px;
 }
 
 .aff-li {
     display: table-cell;
+}
+
+.aff-li h1 {
+    text-align: center;
+}
+
+.aff-li p {
+    text-align: left;
+    padding: 0px 10px;
 }
 
 @media (max-width:970px) {
